@@ -241,11 +241,11 @@
 	<pre class="prettyprint lang-py">
 	def naive_bayes_text(train_data, test_data):
 		''' Takes in a training data object with the class of document as the key and a
-		list of documents as the value. Calls parse_training_data bove and predict to label 
+		list of documents as the value. Calls parse_training_data above and predict to label 
 		each document with a class based on the training data. Returns  a list of predicted 
 		classes corresponding to each document in the test data.
 		'''
-		parsed_obj = parse_training_data(training_data)
+		parsed_obj = parse_training_data(train_data)
 		return predict(parsed_obj, test_data)
 	</pre><br>
 	<p>Let's call our naive_bayes_text function with some toy training and test data.</p><br>
